@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Screen | Kokoatalk Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column top__menu__times">
+        <span>15:31</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fa-solid fa-battery-half"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+
+    <header class="alt_header">
+      <div class="alt_header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-lg"></i>
+        </a>
+      </div>
+      <div class="alt_header__column">
+        <h1 class="alt_header__title">Open Chat</h1>
+      </div>
+      <div class="alt_header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main_screen main_chat">
+      <div class="chat__timestamp">Tuesday, July 19, 2022</div>
+
+      <div class="message_row">
+        <div class="message_row__content">
+          <span class="message__author">Pure Vanilla</span>
+          <div class="message__info">
+            <span class="message__bubble">The truth always prevails!</span>
+            <span class="message__time">11:27</span>
+          </div>
+
+          <div class="message__info">
+            <span class="message__bubble">I knew you could do it!</span>
+            <span class="message__time">11:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message_row message_row__own">
+        <div class="message_row__content">
+          <div class="message__info">
+            <span class="message__bubble">I can`t agree anymore!!</span>
+            <span class="message__time">11:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="form__col">
+        <button type="button">
+          <i class="far fa-plus-square fa-xl"></i>
+        </button>
+      </div>
+      <div class="form__col">
+        <input type="text" placeholder="Write a message.." />
+      </div>
+    </form>
+
+    <!-- 하단 고정메뉴 -->
+    <nav class="nav-bar">
+      <ul class="nav__list">
+        <li>
+          <a href="friends.html" class="nav__items">
+            <span class="nav__items--text">Friends</span>
+            <i class="fa-solid fa-user fa-xl"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="chats.html" class="nav__items">
+            <div class="notification"></div>
+            <span class="nav__items--text">Chats</span>
+            <i class="fa-solid fa-comment-dots fa-xl"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="find.html" class="nav__items">
+            <span class="nav__items--text">Find</span>
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="more.html" class="nav__items">
+            <span class="nav__items--text">More</span>
+
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>화면 크기를 줄여주세요<br />🙏</span>
+    </div>
+
+    <script>
+      const clock = document.querySelector(".top__menu__times");
+
+      function menuClock() {
+        const date = new Date();
+        const dateHours = String(date.getHours()).padStart(2, "0");
+        const dateMin = String(date.getMinutes()).padStart(2, "0");
+
+        clock.innerText = `${dateHours}:${dateMin}`;
+      }
+
+      menuClock();
+      setInterval(menuClock, 1000);
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

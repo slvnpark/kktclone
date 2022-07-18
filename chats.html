@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats | Kokoatalk Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column top__menu__times">
+        <span>15:31</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fa-solid fa-battery-half"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+
+    <div class="screen_header">
+      <div class="screen_header__text">
+        <p>Chats</p>
+      </div>
+      <div class="screen_header__icons">
+        <span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-comment-medical"></i>
+        </span>
+        <span>
+          <i class="fa-brands fa-itunes-note"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-gear"></i>
+        </span>
+      </div>
+    </div>
+
+    <ul class="user_list">
+      <a href="chatscreen.html">
+        <li class="user_list_contents">
+          <div class="user_info">
+            <div class="user_info_img">
+              <img src="img/Cookie_clotted_cream.png" alt="Clotted Cream" />
+            </div>
+            <div class="user_info_text">
+              <p>Clotted Cream</p>
+              <p>Elected Consul of the Crème Republic.</p>
+            </div>
+          </div>
+          <div class="user_more">
+            <span class="time">12:11</span>
+            <span class="circle">2</span>
+          </div>
+        </li>
+      </a>
+
+      <a href="chatscreen2.html">
+        <li class="user_list_contents">
+          <div class="user_info">
+            <div class="user_info_img">
+              <img src="img/Cookie_pomegranate.png" alt="Pomegranate" />
+            </div>
+            <div class="user_info_text">
+              <p>Pomegranate</p>
+              <p>No...!</p>
+            </div>
+          </div>
+          <div class="user_more">
+            <span class="time">15:40</span>
+          </div>
+        </li></a
+      >
+
+      <a href="chatscreen3.html">
+        <li class="user_list_contents">
+          <div class="user_info">
+            <div class="user_info_img">
+              <img src="img/Cookie_pure_vanilla.png" alt="Pure Vanilla " />
+            </div>
+            <div class="user_info_text">
+              <p>Pure Vanilla</p>
+              <p>I knew you could do it!</p>
+            </div>
+          </div>
+          <div class="user_more">
+            <span class="time">18:32</span>
+          </div>
+        </li>
+      </a>
+    </ul>
+
+    <!-- 하단 고정메뉴 -->
+
+    <nav class="nav-bar">
+      <ul class="nav__list">
+        <li>
+          <a href="friends.html" class="nav__items">
+            <span class="nav__items--text">Friends</span>
+            <i class="fa-solid fa-user fa-xl"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="chats.html" class="nav__items">
+            <div class="notification"></div>
+            <span class="nav__items--text">Chats</span>
+            <i class="fa-solid fa-comment-dots fa-xl"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="find.html" class="nav__items">
+            <span class="nav__items--text">Landmarks</span>
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="more.html" class="nav__items">
+            <span class="nav__items--text">Cookingdom</span>
+
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="no-mobile">
+      <span>화면 크기를 줄여주세요<br />🙏</span>
+    </div>
+
+    <script>
+      const clock = document.querySelector(".top__menu__times");
+
+      function menuClock() {
+        const date = new Date();
+        const dateHours = String(date.getHours()).padStart(2, "0");
+        const dateMin = String(date.getMinutes()).padStart(2, "0");
+
+        clock.innerText = `${dateHours}:${dateMin}`;
+      }
+
+      menuClock();
+      setInterval(menuClock, 1000);
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Kokoatalk Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column top__menu__times">
+        <span>15:31</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fa-solid fa-battery-half"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+
+    <div class="welcome">
+      <h1>Welcome Dear User</h1>
+      <p>
+        Don't miss type the password. <br />Because you will not be able to
+        login <br />for the next time.
+      </p>
+    </div>
+
+    <form id="login-form" action="friends.html" method="get">
+      <input type="text" placeholder="Email or Phone Number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Your Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>화면 크기를 줄여주세요<br />🙏</span>
+    </div>
+
+    <script>
+      const clock = document.querySelector(".top__menu__times");
+
+      function menuClock() {
+        const date = new Date();
+        const dateHours = String(date.getHours()).padStart(2, "0");
+        const dateMin = String(date.getMinutes()).padStart(2, "0");
+
+        clock.innerText = `${dateHours}:${dateMin}`;
+      }
+
+      menuClock();
+      setInterval(menuClock, 1000);
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
