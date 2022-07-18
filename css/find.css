@@ -1,0 +1,112 @@
+.find_icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.find_icons_wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.find_icons_column {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.find_icons_column img {
+  width: auto;
+  height: 40px;
+}
+
+.find_icons_column span:first-child {
+  font-size: 26px;
+}
+
+.find_icons_column span:last-child {
+  font-size: 12px;
+  text-align: center;
+}
+
+.croissant span:last-child,
+.flowergarden span:last-child,
+.ticktockclock span:last-child {
+  margin-top: 7px;
+}
+
+.recommend_friends {
+  padding: 0 20px;
+  margin-bottom: 120px;
+}
+
+.recommend_friends p:first-child {
+  opacity: 0.5;
+}
+
+.openchat {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.openchat_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+.openchat_contents_first,
+.openchat_contents_last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.openchat_contents_first img,
+.openchat_contents_last img {
+  width: 80px;
+  height: auto;
+}
+
+.openchat_contents_first__text,
+.openchat_contents_last__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.openchat_contents_first__text img,
+.openchat_contents_last__text img {
+  width: auto;
+  height: 15px;
+}
+
+.openchat_contents_first__text p,
+.openchat_contents_last__text p {
+  margin-top: 3px;
+}
+
+.head_img {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.head_img span {
+  margin-left: 5px;
+}
+
+.head_img span:last-child {
+  color: var(--summerred);
+}
+
+.dreaming {
+  margin-top: 7px;
+}

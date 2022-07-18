@@ -1,0 +1,59 @@
+/* 로그인 */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 120px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#login-form input {
+  width: 330px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid var(--lightgrey);
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+#login-form input:hover {
+  cursor: pointer;
+}
+
+#login-form input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+#login-form input:focus::placeholder {
+  color: black;
+}
+
+#login-form input::placeholder {
+  opacity: 0.7;
+  padding: 0 10px;
+}
+
+#login-form input:nth-child(3) {
+  margin-top: 20px;
+}
+
+#login-form input[type="submit"] {
+  border: none;
+  background-color: var(--summergrey);
+  border-radius: 5px;
+}
+
+#login-form a {
+  font-size: 12px;
+}

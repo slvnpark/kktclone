@@ -1,0 +1,42 @@
+.fa-clipboard {
+  font-size: 22px;
+}
+
+.cookingdom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cookingdom_top {
+  padding: 0 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.cookingdom_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.cookingdom_info__column img {
+  width: auto;
+  height: 40px;
+}
+
+.cookingdom_info__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  width: 105px;
+  height: 80px;
+}
+
+.user_list_top {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}

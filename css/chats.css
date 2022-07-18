@@ -1,0 +1,30 @@
+.user_info_text p:last-child {
+  color: var(--blue);
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.time {
+  font-size: 11px;
+}
+
+.user_list_contents {
+  cursor: pointer;
+}
+
+.circle {
+  margin-top: 3px;
+  width: 17px;
+  height: 17px;
+  background-color: var(--summeryellow);
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 1px;
+  color: white;
+  font-weight: 300;
+}
+
+.user_list_contents:hover {
+  opacity: 0.4;
+}
