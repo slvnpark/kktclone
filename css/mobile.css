@@ -1,5 +1,4 @@
-#no-mobile-small,
-#no-mobile-big {
+#no-mobile {
   position: absolute;
   z-index: 99;
   height: 100vh;
@@ -15,13 +14,7 @@
 }
 
 @media screen and (max-width: 645px) {
-  #no-mobile-small {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 345px) {
-  #no-mobile-big {
+  #no-mobile {
     display: none;
   }
 }
