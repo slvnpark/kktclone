@@ -1,19 +1,27 @@
-#no-mobile {
+#no-mobile-small,
+#no-mobile-big {
   position: absolute;
   z-index: 99;
   height: 100vh;
-  background-color: var(--summerblue);
+  background-color: #00b6b6;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
   top: 0;
 }
 
 @media screen and (max-width: 645px) {
-  #no-mobile {
+  #no-mobile-small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 345px) {
+  #no-mobile-big {
     display: none;
   }
 }
